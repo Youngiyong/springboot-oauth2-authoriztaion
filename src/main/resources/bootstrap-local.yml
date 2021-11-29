@@ -1,0 +1,15 @@
+# cms application.yml
+server:
+  port: 8080
+spring:
+  profiles:
+    active: local
+  redis:
+    host: localhost
+    port: 6379
+    password: ''
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save
+

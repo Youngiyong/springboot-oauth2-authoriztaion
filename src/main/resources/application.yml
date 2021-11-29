@@ -1,0 +1,20 @@
+# cms application.yml
+server:
+  port: 8080
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: qwe123!@#
+  profiles:
+    active: local
+  redis:
+    host: localhost
+    port: 6379
+    password: ''
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save
+
